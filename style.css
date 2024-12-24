@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  padding: 1rem;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+}
+
+.search-form {
+  padding: 1rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border: 2px solid purple;
+}
+
+.search-form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background: purple;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 1rem 0rem;
+}
+
+.gallery-info a {
+  text-decoration: none;
+  color: gray;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 1rem 0rem;
+  width: 90%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 4rem;
+}
+.gallery-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more {
+  padding: 1rem 3rem;
+  background: forestgreen;
+  color: aliceblue;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/*  */
+/* Overlay styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  text-align: center;
+}
+
+#overlay-image {
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: -1rem;
+  right: -2rem;
+  font-size: 2rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
