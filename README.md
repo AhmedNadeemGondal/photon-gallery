@@ -28,4 +28,4 @@ Photon Gallery is a sleek and user-friendly image search website built using the
 1. Clone the repository:
    ```bash
    git clone https://github.com/AhmedNadeemGondal/photon-gallery.git
-   cd photon-gallery
+   ```
