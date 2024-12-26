@@ -20,7 +20,6 @@ Photon Gallery is a sleek and user-friendly image search website built using the
 - **HTML**: For the structure of the website.
 - **CSS**: For styling the application.
 - **JavaScript**: For dynamic functionality.
-- **Node.js**: For the backend server.
 - **Pexels API**: For fetching images.
 - **Vercel**: For deployment and serverless functions.
 
